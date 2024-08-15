@@ -6,7 +6,7 @@ const SideBar = () => {
     return (
         <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-primary text-mytext shadow-lg">
             {/* Home and About*/}
-            <SideBarIcon icon={<img src={img1}></img>}/>
+            <SideBarIcon icon={img1} hyperlink="https://www.youtube.com/watch?v=xvFZjo5PgG0"/>
             {/* Skills and Knowledge */}
             <i>B</i>
             {/* Projects */}
