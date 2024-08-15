@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.sidebar-icon{
+    width: 20px;
+    height: 20px;
+}

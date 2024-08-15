@@ -1,14 +1,13 @@
-import { useState } from 'react'
+import { useDebugValue, useState } from 'react'
 import './App.css'
 import './index.css'
+import SideBar from './components/SideBar'
 
 function App() {
-
   return (
-    <h1 className="text-3xl font-bold underline text-red-500">
-      Hello world!
-    </h1>
-  )
-}
-
+    <div className="flex">
+      <SideBar />
+    </div>
+  );
+};
 export default App
