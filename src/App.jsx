@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useDebugValue, useState } from 'react'
 import './App.css'
+import SideBar from './components/SideBar'
+import Section from './components/Section';
+import Home from './components/Sections/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="flex">
+      <SideBar />
+      <div className="flex-row">
+      <Section children={Home}/>
+      </div>
     </div>
-  )
-}
-
+  );
+};
 export default App
