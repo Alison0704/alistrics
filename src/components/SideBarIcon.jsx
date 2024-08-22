@@ -1,8 +1,9 @@
 const SideBarIcon = ({ icon,hyperlink,title }) => {
   return (
-    <div className="w-10 h-10 m-4" title={title}> 
+    <div className="w-12 h-12 m-4 cursor-pointer" title={title}> 
         <a href={hyperlink}> 
-            <img className="iconStyle" src={icon} alt="icon"/>
+            <img src={icon} alt="icon"/>
+          {/* TODO  Animation of title on hover*/}
         </a>
     </div>
   );

@@ -1,6 +1,5 @@
 import { useDebugValue, useState } from 'react'
 import './App.css'
-import './index.css'
 import SideBar from './components/SideBar'
 
 function App() {

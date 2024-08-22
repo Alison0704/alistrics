@@ -2,8 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.iconStyle {
-  filter: brightness(0%) invert(100%);
-  mask-clip: linear-gradient(transparent 0%, rgba(16, 110, 177, 0) 50%);
-
-}
