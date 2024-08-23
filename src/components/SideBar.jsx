@@ -10,10 +10,11 @@ const SideBar = () => {
     return (
         <div className="fixed top-0 left-0 h-screen m-0 p-0 justify-between flex flex-col bg-primary text-mytext shadow-lg">
                 <div>
-                <SideBarIcon icon={img0}/>
+                    {/* TODO Add Logo Icon */}
                 </div>
-                <div className="flex flex-col gap-5">
+                <div className="flex">
                     {/* Home and About*/}
+                    <li className="group/item flex flex-col gap-5">
                     <SideBarIcon icon={img1} title={"Home"}/>
                     {/* Skills and Knowledge */}
                     <SideBarIcon icon={img2} title={"Skills"}/>
@@ -23,6 +24,8 @@ const SideBar = () => {
                     <SideBarIcon icon={img4} title={"Experiences"}/>
                     {/* Contact */}
                     <SideBarIcon icon={img5} title={"Contact"}/>
+                    </li>
+                   
                 </div>
             </div>
     );
