@@ -1,4 +1,4 @@
-const SideBarIcon = ({ icon,hyperlink,title }) => {
+function SideBarIcon({ icon,hyperlink,title }){
   return (
     <div className="relative group w-12 h-12 m-4 cursor-pointer flex flex-row" title={title}>
     <img src={icon} alt="icon"/>

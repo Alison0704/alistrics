@@ -6,7 +6,7 @@ import img3 from "./assets/icons/Project.svg";
 import img4 from "./assets/icons/Experience.svg";
 import img5 from "./assets/icons/Contact.svg";
 
-const SideBar = () => { 
+function SideBar(){ 
     return (
         <div className="fixed top-0 left-0 h-screen m-0 p-0 justify-between flex flex-col bg-primary text-mytext shadow-lg">
                 <div>

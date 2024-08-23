@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+section{
+    width: 85vw;
+    height: 100vh;
+    align-items: center;
+}
+body{
+    background-color:#508C9B;
+}
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
