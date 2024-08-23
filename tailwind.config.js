@@ -2,13 +2,7 @@
 export default {
   mode: 'jit',
   darkMode: 'class',
-  purge: {
-    enabled: true,
-    content: [
-      './index.html',
-      './src/**/*.{js,jsx,ts,tsx}',
-    ],
-  },
+  
   content: [
     './index.html',
     './src/**/*.{js,jsx,ts,tsx}',
