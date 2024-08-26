@@ -2,46 +2,41 @@ import React, { useState, useEffect } from 'react';
 
 const FollowerCat = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
-    const [color, setColor] = useState('red');
+    const [isIdle, setIsIdle] = useState(false);
 
     useEffect(() => {
-        const handleMouseMove = (e) => {
-            // Add a delay of 500ms
-            setTimeout(() => {
-                setPosition({ x: e.clientX, y: e.clientY });
-            }, 1000);
+        const handleMouseMove = (event) => {
+            setIsIdle(true);
+            setPosition({ x: event.clientX, y: event.clientY});
+        };
+
+        const handleMouseIdle = () => {
+            setIsIdle(false);
         };
 
         window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('mouseout', handleMouseIdle);
 
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-
-    useEffect(() => {
-        // Alternate between red and blue every second
-        const interval = setInterval(() => {
-            setColor((prevColor) => (prevColor === 'red' ? 'blue' : 'red'));
-        }, 1000);
-
-        return () => {
-            clearInterval(interval);
+            window.removeEventListener('mouseout', handleMouseIdle);
         };
     }, []);
 
     return (
         <div
             style={{
-                position: 'absolute',
+                position: 'fixed',
                 top: position.y,
                 left: position.x,
                 width: '50px',
                 height: '50px',
                 borderRadius: '50%',
-                backgroundColor: color,
+                backgroundColor: 'red',
+                transition:'ease-in-out 2s',
+                pointerEvents: isIdle ? 'none':'all'
             }}
-        ></div>
+        />
     );
 };
 
