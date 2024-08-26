@@ -1,7 +1,6 @@
 function MyHome(){
     return (
-        <section className="flex bg-secondary">
-
+        <section className="flex bg-mainColor60">
         </section>
     );
 }
