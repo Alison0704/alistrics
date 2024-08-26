@@ -1,6 +1,4 @@
 import Deco from "./DecoIntro.png";
-import WelcomeIntro from "./Intro.png"
-import IntroWords from './Intro paragraph.png'
 
 function MyHome(){
     return (
