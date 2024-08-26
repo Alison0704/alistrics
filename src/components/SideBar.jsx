@@ -1,30 +1,29 @@
 import SideBarIcon from "./SideBarIcon";
-import img1 from "./assets/icons/House.svg";
-import img2 from "./assets/icons/Skills.svg";
-import img3 from "./assets/icons/Project.svg";
-import img4 from "./assets/icons/Experience.svg";
-import img5 from "./assets/icons/Contact.svg";
+import about from "./assets/icons/About.svg";
+import home from "./assets/icons/House.svg";
+import skills from "./assets/icons/Skills.svg";
+import exp from "./assets/icons/Experience.svg";
+import mail from "./assets/icons/Contact.svg";
 
 function SideBar(){ 
     return (
-        <div className="fixed top-0 left-0 h-screen m-0 p-0 justify-between flex flex-col bg-mainColor60 text-mytext shadow-lg">
+        <div className="fixed top-0 left-0 h-screen m-0 p-0 justify-between flex flex-col bg-mainColor60 shadow-lg border-r-2 border-mainColor30">
                 <div>
-                    {/* TODO Add Logo Icon */}
+                    {/*About*/}
+                    <SideBarIcon icon={about} title={"About me"}/>
+                    {/* TODO write about me title comment */}
                 </div>
                 <div className="flex">
-                    {/* Home and About*/}
+                    {/* Home*/}
                     <li className="group/item flex flex-col gap-5">
-                    <SideBarIcon icon={img1} title={"Home"}/>
+                    <SideBarIcon icon={home} title={"Home"}/>
                     {/* Skills and Knowledge */}
-                    <SideBarIcon icon={img2} title={"Skills"}/>
-                    {/* Projects */}
-                    <SideBarIcon icon={img3} title={"Projects"}/>
+                    <SideBarIcon icon={skills} title={"Skills"}/>
                     {/* Experiences */}
-                    <SideBarIcon icon={img4} title={"Experiences"}/>
+                    <SideBarIcon icon={exp} title={"Experiences"}/>
                     {/* Contact */}
-                    <SideBarIcon icon={img5} title={"Contact"}/>
+                    <SideBarIcon icon={mail} title={"Email me"}/>
                     </li>
-                   
                 </div>
             </div>
     );

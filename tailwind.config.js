@@ -10,9 +10,9 @@ export default {
   theme:{
     extend: {
       colors: {
-        mainColor60: '#201E43',
-        mainColor30: '#134B70', 
-        mainColor10: '#508C9B', 
+        mainColor60: '#0E1142',
+        mainColor30: '#DFC9A7', 
+        mainColor10: '#FF9900', 
       },
     },
   },
