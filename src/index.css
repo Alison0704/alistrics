@@ -12,16 +12,17 @@
   }
 body{
     background-color:#0E1142;
-    /* Import star animation with low opacity */
+    /* TODO Import star animation with low opacity */
 }
 section{
+    /* TODO fix overlapping sections */
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 6rem;
     flex-direction: column;
 }
+
 /* TODO reduce size at 1200px */
 p{
     font-family: Jura;

@@ -27,7 +27,7 @@ function Skills(){
         'Adaptability',
         'Continuous Learning',
         'Self-Motivation',
-        'Stress Management'
+   
     ];
     const hobbySkills = [
         'Clip Studio Paint - Digital Art',
@@ -37,9 +37,8 @@ function Skills(){
         'Unity'
     ];
     return (
-        <section>
-            {/* TODO floating skills in home section */}
-            <p className="text-mainColor30 text-5xl flex justify-center">Skills</p>
+        <section id="skills">
+            <p className="text-mainColor30 text-7xl flex justify-center">Skills</p>
             <div className="grid grid-cols-2 grid-rows-2">
                 <SkillsBox title={"Hardware"} description={""} skills={hardwareSkills} btnName={"Hardware Resume"} />
                 <SkillsBox title={"Software"} description={""} skills={softwareSkills} btnName={"Software Resume"} />
