@@ -2,7 +2,7 @@ import Deco from "./Images/DecoIntro.png";
 
 function MyHome(){
     return (
-        <section className="flex">
+        <section className="flex m-0">
            <img src={Deco} alt="" />
            <div className="flex flex-col gap-y-4 cursor-default">
            <p className="text-mainColor30">Currently an undergraduate in University of Ottawa, tackling the program <span className="text-mainColor10">BASc Electrical Engineering and BSc Computing Technology.</span></p>
