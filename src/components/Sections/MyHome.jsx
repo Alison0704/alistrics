@@ -1,9 +1,14 @@
-import Deco from "./DecoIntro.png";
+import Deco from "./Images/DecoIntro.png";
 
 function MyHome(){
     return (
-        <section className="flex bg-mainColor60">
+        <section className="flex">
            <img src={Deco} alt="" />
+           <div className="flex flex-col gap-y-4 cursor-default">
+           <p className="text-mainColor30">Currently an undergraduate in University of Ottawa, tackling the program <span className="text-mainColor10">BASc Electrical Engineering and BSc Computing Technology.</span></p>
+           <p className="text-mainColor30 hover:font-extrabold text-2xl">Welcome to my Portfolio website</p>
+           <p className="text-mainColor30">Currently looking for <span className="text-mainColor10">Hardware internships for Summer 2025</span></p>
+           </div>
         </section>
     );
 }
