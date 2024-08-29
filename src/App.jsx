@@ -1,4 +1,3 @@
-
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import SideBar from './components/SideBar';
@@ -14,7 +13,6 @@ function App() {
     <>
       <FollowerCat/>
       <SideBar/>
-
 
       <AnchorLink id="home">
         <MyHome/>
