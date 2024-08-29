@@ -3,7 +3,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import SideBar from './components/SideBar';
 import MyHome from './components/Sections/MyHome';
 import Skills from './components/Sections/Skills/Skills';
-import Projects from './components/Sections/Projects/Projects';
 import Experiences from './components/Sections/Experience/Experience';
 import Contact from './components/Sections/Contact';
 
@@ -20,7 +19,7 @@ function App() {
 
       <AnchorLink id="skills">
         <Skills/>
-        <Projects/>
+        
       </AnchorLink>
 
       <AnchorLink id="experiences">

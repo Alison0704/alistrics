@@ -6,8 +6,8 @@ function Experiences () {
   const work2 = ['Jan 2024 - Apr 2024','Teaching Assistant – ITI 1500 – University of Ottawa - Ottawa, ON','Assisted students in understanding the course material, provided feedback on assignments, and helped students with their projects.'];
   const work3 = ['May 2023 - Current','Project Clerk, Pension and Benefits Assistant – University of Ottawa - Ottawa, ON','Assisted the Pension and Benefits team with their daily tasks. Responsible for updating the pension and benefits database, and also helped with the preparation of the pension and benefits reports.'];
   return (
-    <section id="experience">
-      <p className="text-mainColor30 text-7xl flex justify-center">Experience</p>
+    <section id="experience" className="flex m-0 h-[100vh]">
+      <p className="text-mainColor30 text-5xl font-bold flex justify-center">Experience</p>
       <p className="text-mainColor30 text-2xl flex">Academics</p>
       <ExpBox  date={academic0[0]} title={academic0[1]} description={academic0[2]}/>
       <ExpBox  date={academic1[0]} title={academic1[1]} description={academic1[2]}/>
