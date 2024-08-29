@@ -28,4 +28,10 @@ p{
     font-family: Jura;
 }
 
+.deco-rectangle{
+    border: solid 2px rgb(255,153,0);
+    border-radius: 30px;
+    background-color: rgba(251, 228, 200, 0.6);
+}
+
 

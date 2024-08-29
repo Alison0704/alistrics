@@ -14,16 +14,21 @@ function App() {
     <>
       <FollowerCat/>
       <SideBar/>
+
+
       <AnchorLink id="home">
         <MyHome/>
       </AnchorLink>
+
       <AnchorLink id="skills">
         <Skills/>
         <Projects/>
       </AnchorLink>
+
       <AnchorLink id="experiences">
         <Experiences/>
       </AnchorLink>
+
       <Contact/>
     </>
   );
