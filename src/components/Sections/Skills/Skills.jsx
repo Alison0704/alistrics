@@ -41,7 +41,7 @@ function Skills(){
     return (
         <section className="flex m-0">
             <p className="text-mainColor30 text-5xl font-bold flex justify-center">Skills</p>
-            <div className="grid grid-cols-2 auto-rows-auto">
+            <div className="grid h-4/5 grid-cols-2 grid-rows-2">
                 <SkillsBox title={"Hardware"} description={""} skills={hardwareSkills} btnName={"Hardware Resume"} />
                 <SkillsBox title={"Software"} description={""} skills={softwareSkills} btnName={"Software Resume"} />
                 <SkillsBox title={"Soft Skills"} description={"These skills enable individuals to approach tasks with precision, efficiency, and a systematic approach preventing errors and ultimately lead to better outcomes."} skills={softSkills} />
