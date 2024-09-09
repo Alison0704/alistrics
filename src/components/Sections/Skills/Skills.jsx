@@ -37,7 +37,7 @@ function Skills(){
         'Unity'
     ];
     return (
-        <section id="skills">
+        <section id="skills" className="relative">
             <p className="text-mainColor30 text-7xl flex justify-center">Skills</p>
             <div className="grid grid-cols-2 grid-rows-2">
                 <SkillsBox title={"Hardware"} description={""} skills={hardwareSkills} btnName={"Hardware Resume"} />

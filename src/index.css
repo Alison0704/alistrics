@@ -11,6 +11,7 @@
     /* TODO recolor scroll bar */
   }
 body{
+    font-family: Jura;
     background-color:#0E1142;
     /* TODO Import star animation with low opacity */
 }
@@ -21,6 +22,9 @@ section{
     display: flex;
     margin-top: 6rem;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
+
 }
 
 /* TODO reduce size at 1200px */
