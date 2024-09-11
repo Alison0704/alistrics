@@ -39,9 +39,11 @@ function Skills(){
         'Unity'
     ];
     return (
-        <section className="flex m-0">
-            <p className="text-mainColor30 text-5xl font-bold flex justify-center">Skills</p>
-            <div className="grid h-4/5 grid-cols-2 grid-rows-2">
+home
+        <section id="skills" className="relative h-full">
+            <p className="text-mainColor30 text-7xl flex justify-center">Skills</p>
+            <div className="grid relative grid-cols-2 grid-rows-2">
+main
                 <SkillsBox title={"Hardware"} description={""} skills={hardwareSkills} btnName={"Hardware Resume"} />
                 <SkillsBox title={"Software"} description={""} skills={softwareSkills} btnName={"Software Resume"} />
                 <SkillsBox title={"Soft Skills"} description={"These skills enable individuals to approach tasks with precision, efficiency, and a systematic approach preventing errors and ultimately lead to better outcomes."} skills={softSkills} />

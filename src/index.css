@@ -2,7 +2,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
+/* TODO remove duplicate css attributes in all files and add them here */
 #root {
     margin: 0;
     padding: 0 4rem 0 10rem;
@@ -11,18 +11,20 @@
     /* TODO recolor scroll bar */
   }
 body{
+    font-family: Jura;
     background-color:#0E1142;
     /* TODO Import star animation with low opacity */
 }
 section{
     /* TODO fix overlapping sections */
     width: 100%;
-    height: 100vh;
     display: flex;
     margin-top: 6rem;
     flex-direction: column;
-}
+    position: relative;
+    z-index: 1;
 
+}
 /* TODO reduce size at 1200px */
 p{
     font-family: Jura;
@@ -33,5 +35,6 @@ p{
     border-radius: 30px;
     background-color: rgba(251, 228, 200, 0.6);
 }
+
 
 
