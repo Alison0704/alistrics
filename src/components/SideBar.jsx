@@ -23,7 +23,10 @@ function SideBar(){
                     <SideBarIcon icon={exp} anchorlink={"#experiences"} title={"Experiences"} />
                     {/* Contact */}
                     {/* TODO fix onclick on icon, not on text */}
-                    <SideBarIcon icon={mail} link={"mailto:aemil072@uottawa.ca"} title={"Email me"} />
+                    <a href="mailto:aemil072@uottawa.ca">
+                        <SideBarIcon icon={mail} title={"Email me"} />
+                    </a>
+                    
                 </li>
             </div>
         </div>
