@@ -8,12 +8,19 @@
     --main-Color30: #DFC9A7; 
     --main-Color10: #FF9900;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--main-Color10) var(--main-Color60);
+
+}
 #root {
     margin: 0;
     padding: 0 4rem 0 10rem;
     justify-content: center;  
     background-color: var(--main-Color60); 
-    /* TODO recolor scroll bar */
   }
 html {
     font-size: 70%;
@@ -28,21 +35,24 @@ section{
     margin: 0;
     width: 100%;
     display: flex;
-    margin-top: 6rem;
+    margin-top: 8rem;
+    padding: 0 6rem;
     flex-direction: column;
     position: relative;
     z-index: 1;
 
 }
-/* TODO reduce size at 1200px */
+/* TODO reduce size at 1000px */
 p{
     font-family: Jura;
+    font-size: 1.5rem;
 }
 
 .deco-rectangle{
-    border: solid 2px rgb(255,153,0);
-    border-radius: 30px;
-    background-color: rgba(251, 228, 200, 0.6);
+    border: solid 2px var(--main-Color10);
+    border-radius: 40px;
+    background-color:var(--main-Color30);
+    opacity: 60%;
 }
 
 
