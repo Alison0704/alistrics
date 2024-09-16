@@ -4,6 +4,7 @@ import home from "./assets/icons/House.svg";
 import skills from "./assets/icons/Skills.svg";
 import exp from "./assets/icons/Experience.svg";
 import mail from "./assets/icons/Contact.svg";
+import ContactIcon from "./ContactIcon";
 
 function SideBar(){ 
     return (
@@ -22,11 +23,7 @@ function SideBar(){
                     {/* Experiences */}
                     <SideBarIcon icon={exp} anchorlink={"#experiences"} title={"Experiences"} />
                     {/* Contact */}
-                    {/* TODO fix onclick on icon, not on text */}
-                    <a href="mailto:aemil072@uottawa.ca">
-                        <SideBarIcon icon={mail} title={"Email me"} />
-                    </a>
-                    
+                        <ContactIcon icon={mail}title={"Email me"} link={"mailto:aemil072@uottawa.ca"} />
                 </li>
             </div>
         </div>

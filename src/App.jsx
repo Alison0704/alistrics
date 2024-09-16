@@ -26,7 +26,10 @@ function App() {
         <Experiences/>
       </AnchorLink>
 
+      <AnchorLink>
       <Contact/>
+      </AnchorLink>
+
     </>
   );
 };
