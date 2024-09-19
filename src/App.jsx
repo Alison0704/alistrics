@@ -5,7 +5,6 @@ import MyHome from './components/Sections/myHome';
 import Skills from './components/Sections/Skills/Skills';
 import Experiences from './components/Sections/Experience/Experience';
 import Contact from './components/Sections/Contact';
-
 import FollowerCat from './components/FollowerCat';
 function App() {
   return (
