@@ -40,7 +40,7 @@ function Skills(){
     ];
     return (
         <section id="skills" className="relative h-full">
-            <p className="text-mainColor30 text-7xl flex justify-center">Skills</p>
+            <p className="text-mainColor10 text-8xl flex justify-center pb-7">Skills</p>
             <div className="grid relative grid-cols-2 grid-rows-2">
                 <SkillsBox title={"Hardware"} description={""} skills={hardwareSkills} btnName={"Hardware Resume"} />
                 <SkillsBox title={"Software"} description={""} skills={softwareSkills} btnName={"Software Resume"} />
