@@ -6,11 +6,14 @@ import Skills from './components/Sections/Skills/Skills';
 import Experiences from './components/Sections/Experience/Experience';
 import Contact from './components/Sections/Contact';
 import FollowerCat from './components/FollowerCat';
+
+import Background from './Background';
 function App() {
   return (
     <>
       <FollowerCat/>
       <SideBar/>
+     
 
       <AnchorLink id="home">
         <MyHome/>
@@ -28,7 +31,8 @@ function App() {
       <AnchorLink>
       <Contact/>
       </AnchorLink>
-
+      
+      <Background/>
     </>
   );
 };
