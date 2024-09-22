@@ -11,6 +11,7 @@ import Background from './Background';
 function App() {
   return (
     <>
+      <Background/>
       <FollowerCat/>
       <SideBar/>
      
@@ -31,8 +32,8 @@ function App() {
       <AnchorLink>
       <Contact/>
       </AnchorLink>
-      
-      <Background/>
+     
+
     </>
   );
 };
