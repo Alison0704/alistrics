@@ -11,10 +11,7 @@ import Background from './Background';
 function App() {
   return (
     <>
-      <Background/>
-      <FollowerCat/>
       <SideBar/>
-     
 
       <AnchorLink id="home">
         <MyHome/>
@@ -22,7 +19,6 @@ function App() {
 
       <AnchorLink id="skills">
         <Skills/>
-        
       </AnchorLink>
 
       <AnchorLink id="experiences">
@@ -30,11 +26,11 @@ function App() {
       </AnchorLink>
 
       <AnchorLink>
-      <Contact/>
+        <Contact/>
       </AnchorLink>
-     
-
+      <Background/>
     </>
+    
   );
 };
 export default App
