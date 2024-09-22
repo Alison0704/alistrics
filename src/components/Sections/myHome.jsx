@@ -1,7 +1,3 @@
-{/*import Deco from "./Images/DecoIntro.png";*/}
-
-import Deco from '../Deco/Deco';
-
 function MyHome(){
     return (
         <section className="flex relative m-0 gap-4 h-screen justify-center">

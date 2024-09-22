@@ -6,7 +6,6 @@ function Projects() {
              <p className="text-mainColor30">Here, you'll find a collection of my personal and professional endeavors. From passion projects to collaborative work, each project represents a unique learning experience and a chance to explore new ideas.</p>
              <button
                className="bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2"
-               onClick={() => window.location.href = 'src/components/Sections/Projects/project.html'}
                type="button"
              >
                View more
