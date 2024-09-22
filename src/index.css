@@ -2,7 +2,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-/* TODO remove duplicate css attributes in all files and add them here */
+
 :root {
     --main-Color60: #0E1142;
     --main-Color30: #DFC9A7; 
@@ -17,10 +17,8 @@
 
 }
 #root {
-    margin: 0;
     padding: 0 4rem 0 10rem;
-    justify-content: center;  
-    background-color: var(--main-Color60); 
+    background-color: transparent;
   }
   
 html {
@@ -29,32 +27,23 @@ html {
 }
 body{
     font-family: Jura;
-    background-color:#0E1142;
-    /* TODO Import star animation with low opacity */
+    background-color: var(--main-Color60);
 }
 section{
-    margin: 0;
-    width: 100%;
-    display: flex;
-    margin-top: 8rem;
     padding: 0 6rem;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-
+    margin: 0;
+    margin-top: 4rem;
 }
-/* TODO reduce size at 1000px */
 p{
     font-family: Jura;
     font-size: 1.5rem;
 }
-
-.deco-rectangle{
+/* .deco-rectangle{
     border: solid 2px var(--main-Color10);
     border-radius: 40px;
     background-color:var(--main-Color30);
     opacity: 60%;
-}
+} */
 
 
 
