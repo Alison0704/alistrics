@@ -1,9 +1,9 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import MyHome from './components/Sections/myHome.jsx';
-import Skills from './components/Sections/Skills/Skills.jsx';
-import Experiences from './components/Sections/Experience/Experience.jsx';
-import Contact from './components/Sections/Contact.jsx';
+import MyHome from './components/Sections-MainPage/myHome.jsx';
+import Skills from './components/Sections-MainPage/Skills/Skills.jsx';
+import Experiences from './components/Sections-MainPage/Experience/Experience.jsx';
+import Contact from './components/Sections-MainPage/Contact.jsx';
 
 function MainPage(){
     return (
@@ -13,7 +13,7 @@ function MainPage(){
       </AnchorLink>
 
       <AnchorLink id="skills">
-        <Skills/>
+        <Skills setCurrentPage={'project'}/>
       </AnchorLink>
 
       <AnchorLink id="experiences">
