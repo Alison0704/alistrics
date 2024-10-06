@@ -9,7 +9,7 @@ function App() {
 
   function renderPage(){
     if (currentPage === 'main') {
-      return <><MainPage /></> ;
+      return <MainPage/>;
     } else if (currentPage === 'project') {
       return <ProjectPage />;
     }

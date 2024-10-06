@@ -13,7 +13,7 @@ function MainPage(){
       </AnchorLink>
 
       <AnchorLink id="skills">
-        <Skills setCurrentPage={'project'}/>
+        <Skills/>
       </AnchorLink>
 
       <AnchorLink id="experiences">

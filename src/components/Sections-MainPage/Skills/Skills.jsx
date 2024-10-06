@@ -5,7 +5,7 @@ function Skills({setCurrentPage}){
         'VHDL',
         'Verilog',
         'MATLAB',
-        'HSPICE/LTSPICE',
+        'LTSPICE',
         'Digital Systems',
         'CMOS Transistors - VLSI',
         'CPU Architecture',
@@ -48,7 +48,7 @@ function Skills({setCurrentPage}){
                 <SkillsBox title={"Soft Skills"} description={"These skills enable individuals to approach tasks with precision, efficiency, and a systematic approach preventing errors and ultimately lead to better outcomes."} skills={softSkills} />
                 <SkillsBox title={"Hobby Skills"} description={"These activities foster imagination, experimentation, and a playful approach to challenges while developing innovative solutions and learn to tackle complex problems with a sense of joy and accomplishment."} skills={hobbySkills}/>
             </div>
-            <Projects setCurrentPage={setCurrentPage}/>
+            <Projects setCurrentPage={setCurrentPage} />
         </section>
     );
 }
