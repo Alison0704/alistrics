@@ -1,27 +1,25 @@
 import React, { useState } from 'react';
-import Background from './Background';
-import MainPage from './MainPage.jsx';
-import ProjectPage from './ProjectPage.jsx';
-import SideBar from './components/SideBar.jsx';
+import Background from './background/Background.jsx';
+import MainPage from './pages/MainPage.jsx';
+import SideBar from './pages/sections-MainPage/Sidebar/SideBar.jsx';
+import AboutMe from './pages/AboutMe.jsx';
 
 function App() {
-  const[currentPage, setCurrentPage] = useState('main');
+  const [currentPage, setCurrentPage] = useState('main');
 
-  function renderPage(){
+  function renderPage() {
     if (currentPage === 'main') {
-      return <MainPage/>;
-    } else if (currentPage === 'project') {
-      return <ProjectPage />;
+      return <MainPage setCurrentPage={setCurrentPage} />;
+    } else if (currentPage === 'about') {
+      return <AboutMe setCurrentPage={setCurrentPage} />;
     }
-  };
+  }
+
   return (
-    <div>
-        <button onClick={() => setCurrentPage('main')}>Main Page</button>
-        <button onClick={() => setCurrentPage('project')}>Project Page</button>
+    <>
+      <Background />
       {renderPage()}
-      <Background/>
-      <SideBar/>
-    </div>
+    </>
   );
 }
-export default App
+export default App;
