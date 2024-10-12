@@ -1,35 +1,25 @@
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import React, { useState } from 'react';
+import Background from './background/Background.jsx';
+import MainPage from './pages/MainPage.jsx';
+import SideBar from './pages/sections-MainPage/Sidebar/SideBar.jsx';
+import AboutMe from './pages/AboutMe.jsx';
 
-import SideBar from './components/SideBar';
-import MyHome from './components/Sections/myHome';
-import Skills from './components/Sections/Skills/Skills';
-import Experiences from './components/Sections/Experience/Experience';
-import Contact from './components/Sections/Contact';
-import FollowerCat from './components/FollowerCat';
 function App() {
+  const [currentPage, setCurrentPage] = useState('main');
+
+  function renderPage() {
+    if (currentPage === 'main') {
+      return <MainPage setCurrentPage={setCurrentPage} />;
+    } else if (currentPage === 'about') {
+      return <AboutMe setCurrentPage={setCurrentPage} />;
+    }
+  }
+
   return (
     <>
-      <FollowerCat/>
-      <SideBar/>
-
-      <AnchorLink id="home">
-        <MyHome/>
-      </AnchorLink>
-
-      <AnchorLink id="skills">
-        <Skills/>
-        
-      </AnchorLink>
-
-      <AnchorLink id="experiences">
-        <Experiences/>
-      </AnchorLink>
-
-      <AnchorLink>
-      <Contact/>
-      </AnchorLink>
-
+      <Background />
+      {renderPage()}
     </>
   );
-};
-export default App
+}
+export default App;

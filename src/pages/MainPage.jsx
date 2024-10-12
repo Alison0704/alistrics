@@ -1,0 +1,33 @@
+import React from 'react';
+import Experiences from './sections-MainPage/Experience/Experience.jsx';
+import Contact from './sections-MainPage/Contact.jsx';
+import SideBar from './sections-MainPage/Sidebar/SideBar.jsx';
+import MyHome from './sections-MainPage/myHome.jsx';
+import Skills from './sections-MainPage/Skills/Skills.jsx';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
+function MainPage({ setCurrentPage }){
+    return (
+        <>
+        <SideBar/>
+      <AnchorLink id="home">
+        <MyHome setCurrentPage={setCurrentPage} />
+      </AnchorLink>
+
+      <AnchorLink id="skills">
+        <Skills/>
+      </AnchorLink>
+
+      <AnchorLink id="experiences">
+        <Experiences/>
+      </AnchorLink>
+
+      <AnchorLink>
+        {/* TODO fix that email me issue */}
+        <Contact/>
+      </AnchorLink>
+        </>
+    );
+}
+
+export default MainPage;
