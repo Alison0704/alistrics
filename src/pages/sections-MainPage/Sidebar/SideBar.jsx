@@ -15,7 +15,7 @@ function SideBar(){
                 <li className="group/item flex flex-col gap-5">
                     <SideBarIcon icon={home} anchorlink={"#home"} title={"Home"} />
                     {/* Skills and Knowledge */}
-                    <SideBarIcon icon={skills} anchorlink={"#skills"} title={"Skills"} />
+                    <SideBarIcon icon={skills} anchorlink={"#skills"} title={"Skills and Projects"} />
                     {/* Experiences */}
                     <SideBarIcon icon={exp} anchorlink={"#experiences"} title={"Experiences"} />
                     {/* Contact */}

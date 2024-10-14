@@ -15,7 +15,7 @@ function MainPage({ setCurrentPage }){
       </AnchorLink>
 
       <AnchorLink id="skills">
-        <Skills/>
+        <Skills setCurrentPage={setCurrentPage}/>
       </AnchorLink>
 
       <AnchorLink id="experiences">

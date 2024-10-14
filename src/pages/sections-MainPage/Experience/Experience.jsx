@@ -10,10 +10,10 @@ function Experiences () {
     <section id="experience" className="relative">
       <p className="text-mainColor10 text-8xl flex justify-center pb-7">Experience</p>
 
-      <p className="text-mainColor30 text-4xl underline flex">Academics</p>
+      <p className="text-mainColor10 text-5xl flex pt-6">Academics</p>
       <ExpBox  date={academic0[0]} title={academic0[1]} description={academic0[2]}/>
       <ExpBox  date={academic1[0]} title={academic1[1]} description={academic1[2]}/>
-      <p className="text-mainColor30 text-4xl underline flex">Work</p>
+      <p className="text-mainColor10 text-5xl flex pt-6">Work</p>
       <ExpBox  date={work1[0]} title={work1[1]} description={work1[2]}/>
       <ExpBox  date={work2[0]} title={work2[1]} description={work2[2]}/>
       <ExpBox  date={work3[0]} title={work3[1]} description={work3[2]}/>

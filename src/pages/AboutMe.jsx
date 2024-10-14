@@ -1,4 +1,5 @@
 import React from 'react';
+import './sections-AboutMe/styleAboutMe.css';
 
 function AboutMe({ setCurrentPage }) {
   return (
