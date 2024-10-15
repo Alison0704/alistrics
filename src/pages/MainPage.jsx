@@ -4,6 +4,7 @@ import Contact from './sections-MainPage/Contact.jsx';
 import SideBar from './sections-MainPage/Sidebar/SideBar.jsx';
 import MyHome from './sections-MainPage/myHome.jsx';
 import Skills from './sections-MainPage/Skills/Skills.jsx';
+import Projects from './sections-MainPage/Projects/Projects.jsx';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function MainPage({ setCurrentPage }){
@@ -15,8 +16,10 @@ function MainPage({ setCurrentPage }){
       </AnchorLink>
 
       <AnchorLink id="skills">
-        <Skills setCurrentPage={setCurrentPage}/>
+        <Skills/>
       </AnchorLink>
+      
+      <Projects setCurrentPage={setCurrentPage}/>
 
       <AnchorLink id="experiences">
         <Experiences/>

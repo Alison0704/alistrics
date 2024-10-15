@@ -5,7 +5,7 @@ import Projects from '../Projects/Projects';
 import hardwareResume from './resumes/Alison_Emilien_Resume_E.pdf';
 import softwareResume from './resumes/Alison_Emilien_Resume_S.pdf';
 
-function Skills({setCurrentPage}){
+function Skills(){
     const hardwareSkills = [
         'VHDL',
         'Verilog',
@@ -56,7 +56,6 @@ function Skills({setCurrentPage}){
 
                 <SkillsBox title={"Hobby Skills"} description={"These activities foster imagination, experimentation, and a playful approach to challenges while developing innovative solutions and learn to tackle complex problems with a sense of joy and accomplishment."} skills={hobbySkills}/>
             </div>
-            <Projects setCurrentPage={setCurrentPage} />
         </section>
     );
 }
