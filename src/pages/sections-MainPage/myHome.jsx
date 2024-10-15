@@ -1,4 +1,3 @@
-import renderPage from '../../App.jsx';
 function MyHome({ setCurrentPage }){
     return (
         <section className="flex flex-col justify-center m-0 gap-4 h-screen">

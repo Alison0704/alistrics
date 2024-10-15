@@ -15,7 +15,7 @@ function SkillsBox({title,description,skills,btnName,pdfLink}) {
                 ))}
             </ol>
             {btnName && pdfLink && (
-                <a className="flex justify-center bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2" onClick={onResumeClick}> <button >{btnName}</button></a>
+                <a className="flex justify-center cursor-pointer bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2" onClick={onResumeClick}> <button>{btnName}</button></a>
                
             )}
         </div>
