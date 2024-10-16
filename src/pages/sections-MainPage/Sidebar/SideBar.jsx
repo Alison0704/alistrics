@@ -20,7 +20,7 @@ function SideBar(){
                     {/* Experiences */}
                     <SideBarIcon icon={exp} anchorlink={"#experiences"} title={"Experiences"} />
                     {/* Contact */}
-                        <ContactIcon icon={mail} title={"Email me"} link={"mailto:aemil072@uottawa.ca"} />
+                        <ContactIcon icon={mail} title={"Email me"} link={"mailto:aliemi@ieee.org"} />
                 </li>
             </div>
         </div>
