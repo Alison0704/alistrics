@@ -3,6 +3,7 @@ import home from "./icons/House.svg";
 import skills from "./icons/Skills.svg";
 import exp from "./icons/Experience.svg";
 import mail from "./icons/Contact.svg";
+import ContactIcon from "./ContactIcon";
 
 function SideBar(){ 
     return (
@@ -19,7 +20,7 @@ function SideBar(){
                     {/* Experiences */}
                     <SideBarIcon icon={exp} anchorlink={"#experiences"} title={"Experiences"} />
                     {/* Contact */}
-                        <SideBarIcon icon={mail} title={"Email me"} link={"mailto:aemil072@uottawa.ca"} />
+                        <ContactIcon icon={mail} title={"Email me"} link={"mailto:aemil072@uottawa.ca"} />
                 </li>
             </div>
         </div>
