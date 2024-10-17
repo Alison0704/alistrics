@@ -14,7 +14,7 @@ function App() {
       return <MainPage setCurrentPage={setCurrentPage} />;
     } else if (currentPage === 'about') {
       return <AboutMe setCurrentPage={setCurrentPage} />;
-    }else if (currentPage === 'projects') {
+    }else if (currentPage === 'projects'){
       return <ProjectPageSel setCurrentPage={setCurrentPage} />;
     }
 

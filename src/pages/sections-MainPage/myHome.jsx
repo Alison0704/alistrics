@@ -1,6 +1,6 @@
 function MyHome({ setCurrentPage }){
     return (
-        <section className="flex flex-col justify-center m-0 gap-4 h-screen">
+        <section className="flex flex-col justify-center m-0 gap-10 h-screen">
             <p className="text-mainColor10 font-semibold text-8xl">Hey There,</p>
                 <p className="text-mainColor30 font-semibold text-7xl">I' m M.A. Alison Emilien</p>
                 <div className="flex flex-col gap-y-4">
