@@ -48,11 +48,11 @@ function Skills(){
             {/* TODO reformat technical skills after resume done */}
             {/* TODO make skills name as sliding logos */}
             <div className="grid relative gap-6 grid-cols-2 grid-rows-2">
-                <SkillsBox title={"Hardware"} pdfLink={hardwareResume} description={""} skills={hardwareSkills} btnName={"Hardware Resume"} />
+                <SkillsBox title={"Hardware"} description={"In today's technology-driven world, understanding hardware is essential for ensuring efficient operations, troubleshooting technical problems, and staying ahead of emerging trends."} pdfLink={hardwareResume} skills={hardwareSkills} btnName={"Hardware Resume"} />
                 
-                <SkillsBox title={"Software"} pdfLink={softwareResume} description={""} skills={softwareSkills} btnName={"Software Resume"} />
+                <SkillsBox title={"Software"} description={"In the digital age, software skills are indispensable for developing, maintaining, and troubleshooting applications, websites, and other digital products."} pdfLink={softwareResume} skills={softwareSkills} btnName={"Software Resume"} />
 
-                <SkillsBox title={"Soft Skills"} description={"These skills enable individuals to approach tasks with precision, efficiency, and a systematic approach preventing errors and ultimately lead to better outcomes."} skills={softSkills} />
+                <SkillsBox title={"Soft Skills"} description={"These skills enable individuals to approach tasks with precision, efficiency, and a systematic approach preventing errors and ultimately lead to better outcomes. Hence, approching team work scenarios becomes less of a challenge."} skills={softSkills} />
 
                 <SkillsBox title={"Hobby Skills"} description={"These activities foster imagination, experimentation, and a playful approach to challenges while developing innovative solutions and learn to tackle complex problems with a sense of joy and accomplishment."} skills={hobbySkills}/>
             </div>
