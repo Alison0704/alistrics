@@ -26,7 +26,6 @@ function MainPage({ setCurrentPage }){
       </AnchorLink>
 
       <AnchorLink>
-        {/* TODO fix that email me issue */}
         <Contact/>
       </AnchorLink>
         </>

@@ -1,22 +1,22 @@
 import React from 'react';
-import ProjectPageSelBox from './sections-Projects/ProjectPageSelBox';
+import MainProjectsSel from './sections-Projects/subSections/MainProjectsSel.jsx';
+import Hardware from './sections-Projects/subSections/hardware';
 
-function ProjectPageSel({ setCurrentPage }) {
-    return (
-      <div className="flex justify-center flex-col h-screen p-20">
-        <div className="grid grid-cols-4 gap-4 h-full">          <ProjectPageSelBox callToAction={"View Hardware Projects"}/>
-          <ProjectPageSelBox callToAction={"View Software Projects"} />
-          <ProjectPageSelBox callToAction={"View Art and Design Portfolio"}/>
-          <ProjectPageSelBox callToAction={"View Music Portfolio"}/>
-        </div>
-        <button
-          className="bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2 mt-4"
-          type="button"
-          onClick={() => setCurrentPage('main')}>
-          Go back to Main Page
-        </button>
-      </div>
-    );
+
+function ProjectPageSel({ setCurrentPage1 }) {
+  const [currentPage, setCurrentPage] = useState('selection');
+  function renderPage() {
+    if (currentPage === 'selection') {
+      return <MainProjectsSel setCurrentPage={setCurrentPage1} />;
+    } else if (currentPage === 'hardware') {
+      return <Hardware setCurrentPage={setCurrentPage1} />;
+    }
+  }
+  return (
+    <>
+      {renderPage()}
+    </>
+  );
   }
 
 export default ProjectPageSel;
