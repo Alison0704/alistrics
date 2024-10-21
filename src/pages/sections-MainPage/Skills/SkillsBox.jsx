@@ -20,7 +20,7 @@ function SkillsBox({title,description,skills,btnName,pdfLink}) {
             <p className="text-mainColor10 text-5xl font-bold flex justify-center">{title}</p>
             {description && (<p className="text-mainColor30 flex p-2 text-opacity-70">{description}</p>)}
             <p className="text-mainColor30" >These skills are:</p>
-            <div className="h-4/5 border-mainColor30 border-dashed border-2 flex justify-center align-middle text-mainColor30 pl-6">
+            <div className="h-4/5 border-opacity-30 border-mainColor30 border-dashed border-2 flex justify-center align-middle text-mainColor30 pl-6">
                 <span className="text-2xl text-mainColor10 opacity-100 animate-pulse">{skills[currentSkillIndex]}</span>
             </div>
             {btnName && pdfLink && (
