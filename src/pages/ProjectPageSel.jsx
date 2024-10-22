@@ -1,22 +1,22 @@
-import React from 'react';
-import MainProjectsSel from './sections-Projects/subSections/MainProjectsSel.jsx';
-import Hardware from './sections-Projects/subSections/hardware';
+import React, { useState } from 'react';
+import MainProjectsSel from './sections-Projects/MainProjectsSel';
+import Hardware from './sections-Projects/Hardware';
 
+function ProjectPageSel({setCurrentPage}) {
+    const [currentPage1, setCurrentPage1] = useState('selection');
+    function renderPage() {
+        if (currentPage1 === 'selection') {
+          return <MainProjectsSel setCurrentPage1={setCurrentPage1} />;
+        } else if (currentPage1 === 'hardware') {
+          return <Hardware setCurrentPage1={setCurrentPage1} />;
+        }
+      }
 
-function ProjectPageSel({ setCurrentPage1 }) {
-  const [currentPage, setCurrentPage] = useState('selection');
-  function renderPage() {
-    if (currentPage === 'selection') {
-      return <MainProjectsSel setCurrentPage={setCurrentPage1} />;
-    } else if (currentPage === 'hardware') {
-      return <Hardware setCurrentPage={setCurrentPage1} />;
-    }
-  }
   return (
     <>
       {renderPage()}
     </>
   );
-  }
+}
 
 export default ProjectPageSel;

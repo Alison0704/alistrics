@@ -1,5 +1,4 @@
 import React from 'react'
-import Hardware from './hardware';
 
 function ProjectPageSelBox({callToAction, image}) {
     return (

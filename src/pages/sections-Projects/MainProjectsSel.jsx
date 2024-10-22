@@ -1,10 +1,13 @@
 import ProjectPageSelBox from './ProjectPageSelBox';
-import hardImage from './images/hardware.jpg';
+import hardImage from './assets/Test.png';
 
-function MainProjectsSel() {
+function MainProjectsSel(setCurrentPage1) {
     return (
         <div className="flex justify-center flex-col h-screen p-20">
-          <div className="grid grid-cols-4 gap-4 h-full">          <ProjectPageSelBox callToAction={"Hardware Projects"} image={hardImage}/>
+          <div className="grid grid-cols-4 gap-4 h-full"> 
+            <div onClick={() => setCurrentPage1('Hardware')}>
+                <ProjectPageSelBox callToAction={"Hardware Projects"} image={hardImage}/>
+             </div>         
             <ProjectPageSelBox callToAction={"Software Projects"} image={hardImage}/>
             <ProjectPageSelBox callToAction={"Character Portfolio"} image={hardImage}/>
             <ProjectPageSelBox callToAction={"Music Portfolio"} image=
@@ -13,9 +16,10 @@ function MainProjectsSel() {
           <button
             className="bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2 mt-4"
             type="button"
-            onClick={() => setCurrentPage('main')}>
+            onClick={() => setCurrentPage1('selection')}>
             Go back to Main Page
           </button>
         </div>
       );
-}
+    }
+    export default MainProjectsSel;
