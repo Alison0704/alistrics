@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Hardware({ setCurrentPage1}) {
+function Music({ setCurrentPage1}) {
   return (
     <div className="overflow-hidden">
-      <p className="flex justify-center text-white">Hardware section</p>
+      <p className="flex justify-center text-white">Music section</p>
       <button
         className="bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2 mt-4"
         type="button"
@@ -15,4 +15,4 @@ function Hardware({ setCurrentPage1}) {
   );
 }
 
-export default Hardware;
+export default Music;

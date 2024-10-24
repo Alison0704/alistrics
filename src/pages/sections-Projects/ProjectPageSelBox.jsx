@@ -4,6 +4,14 @@ function ProjectPageSelBox({ callToAction, image, setCurrentPage1 }) {
   const handleClick = () => {
     if (callToAction === "Hardware Projects") {
       setCurrentPage1('hardware');
+    } else if (callToAction === "Software Projects") {
+      setCurrentPage1('software');
+    }
+    else if (callToAction === "Character Portfolio") {
+      setCurrentPage1('character');
+    }
+    else if (callToAction === "Music Portfolio") {
+      setCurrentPage1('music');
     }
   };
 
