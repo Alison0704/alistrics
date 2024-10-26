@@ -3,7 +3,7 @@ import './sections-AboutMe/styleAboutMe.css';
 
 function AboutMe({ setCurrentPage }) {
   return (
-    <div>
+    <div className='flex flex-col pl-60 pr-60'>
       <p className="text-orange-500">About Me</p>
       <p className="text-orange-500">My name is Alison Emilien and I am a web developer.</p>
       <button
