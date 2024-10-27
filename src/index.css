@@ -8,36 +8,59 @@
     --main-Color30: #DFC9A7; 
     --main-Color10: #FF9900;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     scrollbar-color: var(--main-Color10) var(--main-Color60);
-
 }
+
 #root {
     background-color: transparent;
-  }
-  
+}
+
 html {
     font-size: 70%;
     overflow-x: hidden;
 }
-body{
+
+body {
     font-family: Jura;
     background-color: var(--main-Color60);
 }
-section{
+
+section {
     padding: 0 12rem;
     margin: 0;
     margin-top: 4rem;
 }
-p{
+
+p {
     font-family: Jura;
     font-size: 1.5rem;
 }
 
+.hidden-content {
+    display: none;
+}
 
+.show-message {
+    height: 100vh;
+    color: var(--main-Color10);
+    font-size: 2rem;
+    padding: 2rem;
+}
 
+@media screen and (max-width: 1024px) {
+    .hidden-content {
+        display: none;
+    }
 
+    .show-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

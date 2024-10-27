@@ -12,7 +12,7 @@ function MainPage({ setCurrentPage }){
         <>
         <SideBar/>
       <AnchorLink id="home">
-        <MyHome setCurrentPage={setCurrentPage} />
+        <MyHome setCurrentPage={setCurrentPage}/>
       </AnchorLink>
 
       <AnchorLink id="skills">
