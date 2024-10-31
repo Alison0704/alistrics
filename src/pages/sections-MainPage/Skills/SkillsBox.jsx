@@ -24,8 +24,9 @@ function SkillsBox({title,description,skills,btnName,pdfLink}) {
                 <span className="text-2xl text-mainColor10 opacity-100 animate-pulse">{skills[currentSkillIndex]}</span>
             </div>
             {btnName && pdfLink && (
-                <a className="flex justify-center cursor-pointer bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2" onClick={onResumeClick}><button>{btnName}</button></a>
+                <a className="buttons flex justify-center cursor-pointer bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2" onClick={onResumeClick}><button>{btnName}</button></a>
             )}
+
         </div>
     );
 }

@@ -7,7 +7,7 @@ function MyHome({ setCurrentPage }){
                     <p className="text-mainColor30 mt-7">Currently an undergraduate in University of Ottawa, tackling the program <span className="text-mainColor10">BASc Electrical Engineering and BSc Computing Technology.</span></p>
                     <p className="text-mainColor30 mt-4 text-5xl">Welcome to my Portfolio website</p>
                     <p className="text-mainColor30 mt-4">Currently looking for  <span className="text-mainColor10">Hardware internships for Summer 2025</span></p>
-                    <div className="mt-4"><span  onClick={() => setCurrentPage('about')} className="p-4 cursor-pointer border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl">About me</span>
+                    <div className="mt-4"><span  onClick={() => setCurrentPage('about')} className="buttons p-4 cursor-pointer border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl">About me</span>
                     </div>
                 </div>
                

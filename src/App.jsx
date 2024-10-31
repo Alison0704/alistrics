@@ -39,7 +39,7 @@ function App() {
           {renderPage()}
         </div>
           </>
-      ) : (
+      ):(
         renderPage()
       )}
     </>

@@ -1,9 +1,11 @@
 import React from 'react';
 import './sections-AboutMe/styleAboutMe.css';
+import Background from '../background/Background';
 
 function AboutMe({ setCurrentPage }) {
   return (
-    <div className='flex flex-col pl-60 pr-60'>
+    <>
+        <div className='aboutSection flex flex-col pl-60 pr-60'>
       <p className="text-orange-500">About Me</p>
       <p className="text-orange-500">My name is Alison Emilien and I am a web developer.</p>
       <button
@@ -14,6 +16,8 @@ function AboutMe({ setCurrentPage }) {
         Main Page
       </button>
     </div>
+    </>
+
   );
 }
 
