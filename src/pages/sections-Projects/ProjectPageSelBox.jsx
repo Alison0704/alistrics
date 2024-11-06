@@ -18,7 +18,8 @@ function ProjectPageSelBox({ callToAction, image, setCurrentPage1 }) {
   return (
     <div className="overflow-hidden cursor-pointer" onClick={handleClick}>
       <div className="flex flex-col justify-center h-full w-full p-6 opacity-60 hover:opacity-100 transition-opacity">
-        <img src={image} alt={callToAction} />
+        <img src={image} alt={callToAction} title={callToAction} />
+        <p className="text-center mt-2 text-mainColor30">{callToAction}</p>
       </div>
     </div>
   );

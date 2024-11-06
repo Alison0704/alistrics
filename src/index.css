@@ -16,6 +16,11 @@
     scroll-behavior: smooth;
     scrollbar-color: var(--main-Color10) var(--main-Color60);
 }
+img {
+    border: 2px solid var(--main-Color30);
+    padding: 5px;
+    border-radius: 10px;
+}
 
 #root {
     background-color: transparent;
