@@ -1,17 +1,17 @@
 import React from 'react';
 
-function ProjectPageSelBox({ callToAction, image, setCurrentPage1 }) {
+function ProjectPageSelBox({ callToAction, image, setCurrentPageProject}) {
   const handleClick = () => {
     if (callToAction === "Hardware Projects") {
-      setCurrentPage1('hardware');
+      setCurrentPageProject('hardware');
     } else if (callToAction === "Software Projects") {
-      setCurrentPage1('software');
+      setCurrentPageProject('software');
     }
     else if (callToAction === "Character Portfolio") {
-      setCurrentPage1('character');
+      setCurrentPageProject('character');
     }
     else if (callToAction === "Music Portfolio") {
-      setCurrentPage1('music');
+      setCurrentPageProject('music');
     }
   };
 

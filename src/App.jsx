@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Background from './background/Background.jsx';
+import Background from './pages/Background.jsx';
 import MainPage from './pages/MainPage.jsx';
 import AboutMe from './pages/AboutMe.jsx';
 import ProjectPageSel from './pages/ProjectPageSel.jsx';

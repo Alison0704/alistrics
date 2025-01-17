@@ -1,28 +1,18 @@
 import React, { useState } from 'react';
 import MainProjectsSel from './sections-Projects/MainProjectsSel';
-import Hardware from './sections-Projects/Hardware';
-import Software from './sections-Projects/Software';
-import Character from './sections-Projects/Character';
-import Music from './sections-Projects/Music';
+import ProjectPage from './sections-Projects/ProjectPage';
+
 
 function ProjectPageSel({ setCurrentPage }) {
-  const [currentPage1, setCurrentPage1] = useState('selection');
+  const [currentPageProject, setCurrentPageProject] = useState('selection');
 
   function renderPage() {
-    if (currentPage1 === 'selection') {
-      return <MainProjectsSel setCurrentPage1={setCurrentPage1} setCurrentPage={setCurrentPage} />;
-    } else if (currentPage1 === 'hardware') {
-      return <Hardware setCurrentPage1={setCurrentPage1} />;
-    }else if (currentPage1 === 'software') {
-      return <Software setCurrentPage1={setCurrentPage1} />;
-    }else if (currentPage1 === 'character') {
-      return <Character setCurrentPage1={setCurrentPage1} />;
-    }else if (currentPage1 === 'music') {
-      return <Music setCurrentPage1={setCurrentPage1} />;
-    }
-
+    if (currentPageProject === 'selection') {
+      return <MainProjectsSel setCurrentPageProject={setCurrentPageProject} setCurrentPage={setCurrentPage} />;
+    } else if (currentPageProject === 'ProjectPage') {
+      return <ProjectPage setCurrentPageProject={setCurrentPageProject} />;
   }
-
+  }
   return (
     <>
       {renderPage()}
