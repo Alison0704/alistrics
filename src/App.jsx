@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Background from './pages/Background.jsx';
 import MainPage from './pages/MainPage.jsx';
 import AboutMe from './pages/AboutMe.jsx';
 import ProjectPageSel from './pages/ProjectPageSel.jsx';
@@ -29,7 +28,9 @@ function App() {
 
   return (
     <>
-      <Background />
+      <video className="fixed min-h-screen min-w-max left-0 opacity-25 top-0 z-[-1]" autoPlay muted loop>
+          <source src="src/assets/CircuitB.mp4" type="video/mp4" />
+        </video>
       {isScreenSmall ? (
         <>
         <div className="show-message">
