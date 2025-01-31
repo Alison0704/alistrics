@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -43,8 +43,8 @@ section {
 }
 
 p {
-    font-family: Jura;
-    font-size: 1.5rem;
+    font-family: 'Kode Mono', monospace;
+    font-size: 1.8rem;
 }
 
 .hidden-content {
@@ -55,10 +55,14 @@ p {
     height: 100vh;
     color: var(--main-Color10);
     font-size: 2rem;
+    font-family: 'kode mono', monospace;
     padding: 2rem;
 }
+
 .buttons{
     transition: background-color 0.3s ease;
+    font-family: 'Kode Mono', monospace;
+    font-size: 1.8rem;  
 }
 
 .buttons:hover {

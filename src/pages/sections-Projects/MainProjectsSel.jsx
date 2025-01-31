@@ -12,7 +12,7 @@ function MainProjectsSel({ setCurrentPageProject, setCurrentPage }) {
         <ProjectPageSelBox callToAction={"Music Portfolio"} image={hardImage} setCurrentPageProject={setCurrentPageProject} />
       </div>
       <button
-        className="bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2 mt-4"
+        className="buttons bg-transparent border-2 border-mainColor10 text-mainColor10 rounded-xl text-xl p-2 mt-4"
         type="button"
         onClick={() => setCurrentPage('main')}
       >
